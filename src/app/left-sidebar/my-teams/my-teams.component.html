@@ -1,0 +1,13 @@
+<mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"  class="side-expansion-color">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+        <i style="padding-right:30px" class="material-icons">dashboard</i>
+        <span><b>My Teams</b></span>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <div *ngFor="let team of teams">
+      <app-team [team]="team"></app-team>
+      <p></p>
+  </div>
+  
+</mat-expansion-panel>

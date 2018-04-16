@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-header>
+    <img style="max-height: 40px;" mat-card-avatar [src]="team.avatarImage">
+    <div style="width:250px">
+      <mat-card-title><h3>{{ team.name }}</h3></mat-card-title>
+    </div>
+  </mat-card-header>
+  <mat-card-actions align>
+    <button mat-button class="button-color">My Tasks</button>
+    <button style="float:right" mat-button class="button-color">Board</button>
+  </mat-card-actions>
+</mat-card>
